@@ -75,3 +75,4 @@ This type of application mimics the core functionality of real-world weather too
 
 Task 2 was designed to help transition from basic Java programming to a more application-oriented mindset. It required integrating front-end (Swing) and back-end (API & data processing) logic while maintaining code readability, functionality, and user interaction quality. By implementing extra features like dark mode and auto-refresh, the project has moved one step closer to a production-grade utility application. This task has significantly contributed to enhancing my understanding of **Java-based GUI development**, **API consumption**, and **UX-oriented design**, making it a standout project in my internship journey.
 
+![Image](https://github.com/user-attachments/assets/bd238d2d-dfb9-445e-813a-b0d4eee061c4)
