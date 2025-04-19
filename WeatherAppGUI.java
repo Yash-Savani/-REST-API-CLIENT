@@ -25,7 +25,6 @@ public class WeatherAppGUI extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
-        // Input panel
         JPanel topPanel = new JPanel(new FlowLayout());
         topPanel.add(new JLabel("Enter City:"));
         cityField = new JTextField(20);
@@ -34,13 +33,11 @@ public class WeatherAppGUI extends JFrame {
         topPanel.add(fetchButton);
         add(topPanel, BorderLayout.NORTH);
 
-        // Output area
         outputArea = new JTextArea();
         outputArea.setEditable(false);
         outputArea.setFont(new Font("Monospaced", Font.PLAIN, 14));
         add(new JScrollPane(outputArea), BorderLayout.CENTER);
 
-        // Button action
         fetchButton.addActionListener(e -> fetchWeather());
     }
 
@@ -95,7 +92,6 @@ public class WeatherAppGUI extends JFrame {
                     .atZone(ZoneId.systemDefault())
                     .format(DateTimeFormatter.ofPattern("EEEE, MMMM d, yyyy h:mm a"));
 
-            // Output
             outputArea.setText("");
             outputArea.append("📍 " + cityName + " " + flagEmoji + "\n");
             outputArea.append("🕒 Time: " + timeString + "\n\n");
